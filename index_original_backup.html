@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lencho Taye Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/bc43529ae8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Achievements & Leadership</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#mentors">Mentors & Collaborators</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>ODA Special Boarding School Student</p>
+          <h1>Hi, I'm <span>Lencho Taye</span><br />from Ethiopia</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------about----------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a purpose-driven STEM innovator and aspiring aerospace
+              engineer committed to using science and technology to solve
+              real-world problems and create meaningful social impact. My
+              passion for engineering is rooted in both academic excellence and
+              community-centered problem solving.
+            </p>
+
+            <p>
+              My journey began with observing challenges in my own community,
+              where preventable methanol exposure from unsafe alcohol production
+              has caused irreversible blindness among many individuals.
+              Motivated to act, I worked directly with visually impaired
+              community members, conducted field surveys, and applied my STEM
+              training to develop <strong>Blind-Tech</strong>, a low-cost,
+              need-based assistive technology system.
+              <strong>Blind-Tech</strong> integrates obstacle detection,
+              emergency services, GPS tracking, automated home control, and
+              intelligent software into a single accessible platform designed
+              specifically for underserved communities.
+            </p>
+
+            <p>
+              This project earned
+              <strong
+                >1st Place at the National Science and Engineering
+                Competition</strong
+              >
+              and a
+              <strong
+                >Gold Medal at the National Science and Engineering Fair</strong
+              >, and received recognition and mentorship from professionals at
+              <strong>Microsoft</strong>, <strong>Google</strong>, and
+              <strong>NASA Goddard Space Flight Center</strong>.
+            </p>
+
+            <p>
+              Alongside innovation, I am deeply committed to leadership and
+              education. I founded
+              <strong>EAGLOPEN Science and Technology Organization</strong>,
+              through which I teach programming, algorithms, artificial
+              intelligence, and aerospace fundamentals to talented Ethiopian
+              students. Through its flagship program,
+              <strong>EAGLOPEN AlgoLab</strong>, I have partnered with
+              <strong>Adama Science and Technology University</strong> to help
+              nurture the country’s next generation of innovators.
+            </p>
+
+            <p>
+              Academically, I have consistently demonstrated excellence. I
+              achieved the <strong>highest regional score in Grade 8</strong>,
+              earning the
+              <strong>ODA Special Boarding School Scholarship</strong> to pursue
+              my secondary education at one of Ethiopia’s top high schools. I
+              further strengthened my technical foundation through highly
+              selective programs such as <strong>AddisCoder</strong>, the
+              <strong
+                >Ethiopian Artificial Intelligence Institute (EAII) Summer
+                Camp</strong
+              >, and the <strong>TAIK Pan-African AI Camp</strong>, gaining
+              advanced training in algorithms, artificial intelligence, and
+              collaborative research.
+            </p>
+
+            <p>
+              Despite the absence of aerospace engineering programs in Ethiopian
+              universities, my ambition to pursue this field remains unwavering.
+              I aspire to obtain advanced education in aerospace engineering,
+              contribute to high-impact research, and return my expertise to
+              Africa through innovation, mentorship, and technology-driven
+              development. I am seeking
+              <strong>scholarship opportunities</strong> that will enable me to
+              transform this vision into global contribution.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>STEM</span><br />Winner of the STEM Science and
+                  Engineering Fair
+                </li>
+                <li>
+                  <span>EAGLOPEN</span><br />Founder and Lecturer at EAGLOPEN
+                  Science and Technology Organization
+                </li>
+                <li>
+                  <span>AddisCoder</span><br />Participant of the most
+                  competitive summer program
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>First Aid Director</span><br />Director of the Most
+                  prestigious club in my school
+                </li>
+                <li>
+                  <span>EAGLOPEN Founder</span><br />Founder at EAGLOPEN Science
+                  and Technology Organization
+                </li>
+                <li>
+                  <span>EAGLOPEN Lecturer</span><br />Lecturer at EAGLOPEN
+                  Science and Technology Organization
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>ODA</span><br />Winner of the STEM Science and
+                  Engineering Fair
+                </li>
+                <li>
+                  <span>KELECHA</span><br />Founder and Lecturer at EAGLOPEN
+                  Science and Technology Organization
+                </li>
+                <li>
+                  <span>ASTU</span><br />Participant of the most competitive
+                  summer program
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------services------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Achievements & Leadership</h1>
+        <div class="services-list">
+          <div class="service-box" style="--bg: url('achiev-lead/Stem.jpg')">
+            <div class="service-content">
+              <i class="fa-solid fa-microchip"></i>
+              <h2>STEMpower Project</h2>
+              <p>
+                I served my community by building one of the most scientific
+                project...
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+
+          <div
+            class="service-box"
+            style="--bg: url('achiev-lead/eaglopen.jpg')"
+          >
+            <div class="service-content">
+              <i class="fa-solid fa-building-ngo"></i>
+              <h2>EAGLOPEN Founder and Lecturer</h2>
+              <p>
+                I served my country as a passionate young in teaching many
+                brilliant students in my country teaching them the basic
+                knowledge about the programming and algorithms in Adama Science
+                and Technology University for three weeks.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+
+          <div
+            class="service-box"
+            style="--bg: url('achiev-lead/firstaid.jpg')"
+          >
+            <div class="service-content">
+              <i class="fa-solid fa-virus-covid"></i>
+              <h2>Frist AID</h2>
+              <p>
+                I served my community and my school students as the director of
+                the First AID and Anti HIV AIDS club director spreading the
+                awerness among the peers so that we can have a fully awared
+                country with a full young minds.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+
+          <div
+            class="service-box"
+            style="--bg: url('achiev-lead/Addiscoder2.png')"
+          >
+            <div class="service-content">
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <h2>University Teaching</h2>
+              <p>
+                Delivered hands-on programming and algorithm lectures to
+                university students at Adama Science and Technology University
+                as part of EAGLOPEN initiatives.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+
+          <div
+            class="service-box"
+            style="--bg: url('achiev-lead/eth-scie.jpg')"
+          >
+            <div class="service-content">
+              <i class="fa-solid fa-award"></i>
+              <h2>National Science Fair Winner</h2>
+              <p>
+                First-place winner at the National Science and Engineering Fair
+                for an assistive technology project supporting visually impaired
+                individuals.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+
+          <div class="service-box" style="--bg: url('achiev-lead/EAII.jpg')">
+            <div class="service-content">
+              <i class="fa-solid fa-people-group"></i>
+              <h2>Community Leadership</h2>
+              <p>
+                Led student organizations and community initiatives focused on
+                health awareness, youth empowerment, and technology education.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------portfolio------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work1.jpg" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                I have been managing the social media app that offers the
+                scholarship info for the Ethiopian students across the country
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work2.jpg" />
+            <div class="layer">
+              <h3>EAGLOPEN Founder</h3>
+              <p>
+                I have been working as a General Director of the EAGLOPEN
+                company.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work3.jpg" />
+            <div class="layer">
+              <h3>EAGLOPEN Lecturer</h3>
+              <p>
+                I have been working as a EAGLOPEN Lecturer during the summer for
+                the three weeks
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- -----------mentors & collaborators----------- -->
+    <div id="mentors">
+      <div class="container">
+        <h1 class="sub-title">Mentors & Collaborators</h1>
+        <div class="mentors-list">
+          <!-- Mentor Box 1 -->
+          <div class="mentor-box">
+            <div class="mentor-slideshow">
+              <img src="people/birhanu.jpg" alt="Birhanu" />
+              <img src="people/birhanu1.webp" alt="Birhanu" />
+              <img src="people/birhanu2.jpg" alt="Birhanu" />
+              <img src="people/birhanu3.jpg" alt="Birhanu" />
+            </div>
+            <div class="mentor-text">
+              <h3>Dr. Birhanu Bulcha</h3>
+              <p>NASA Goddard Space Flight Center</p>
+            </div>
+            <a href="#" class="mentor-link"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+
+          <!-- Mentor Box 2 -->
+          <div class="mentor-box">
+            <div class="mentor-slideshow">
+              <img src="people/jelani.jpg" alt="Jelani" />
+              <img src="people/jelani1.png" alt="Jelani" />
+              <img src="people/jelani2.jpg" alt="Jelani" />
+              <img src="people/jelani3.jpg" alt="Jelani" />
+            </div>
+            <div class="mentor-text">
+              <h3>Professor Jelani Nelson</h3>
+              <p>Professor at Harvard and UC Berkeley</p>
+            </div>
+            <a href="#" class="mentor-link"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+
+          <!-- Mentor Box 3 -->
+          <div class="mentor-box">
+            <div class="mentor-slideshow">
+              <img src="organizations/astu.png" alt="ASTU" />
+              <img src="organizations/astu1.jpg" alt="ASTU" />
+              <img src="organizations/astu2.jpg" alt="ASTU" />
+              <img src="organizations/astu3.jpg" alt="ASTU" />
+            </div>
+            <div class="mentor-text">
+              <h3>Adama Science and Technology University</h3>
+              <p>Leading Science and Technology University in Ethiopia</p>
+            </div>
+            <a href="#" class="mentor-link"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+
+          <!-- Mentor Box 4 -->
+          <div class="mentor-box">
+            <div class="mentor-slideshow">
+              <img src="people/daniel.png" alt="Daniel" />
+              <img src="people/daniel1.jpg" alt="Daniel" />
+              <img src="people/daniel2.jpg" alt="Daniel" />
+              <img src="people/daniel3.jpg" alt="Daniel" />
+            </div>
+            <div class="mentor-text">
+              <h3>Professor Daniel Kang</h3>
+              <p>Professor of CS at UIUC</p>
+            </div>
+            <a href="#" class="mentor-link"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+
+          <!-- Mentor Box 5 -->
+          <div class="mentor-box">
+            <div class="mentor-slideshow">
+              <img src="people/haucheng.png" alt="Haucheng" />
+              <img src="people/haucheng1.png" alt="Haucheng" />
+              <img src="people/haucheng2.jpg" alt="Haucheng" />
+              <img src="people/haucheng selfie.png" alt="Haucheng" />
+            </div>
+            <div class="mentor-text">
+              <h3>Professor Huacheng Yu</h3>
+              <p>Department of Computer Science Princeton University</p>
+            </div>
+            <a href="#" class="mentor-link"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+
+          <!-- Mentor Box 6 -->
+          <div class="mentor-box">
+            <div class="mentor-slideshow">
+              <img src="people/huy.png" alt="Jelani" />
+              <img src="people/huy1.jpg" alt="Jelani" />
+              <img src="people/huy.png" alt="Jelani" />
+              <img src="people/huy2.jpg" alt="Jelani" />
+            </div>
+            <div class="mentor-text">
+              <h3>Professor Huy Lê Nguyễn</h3>
+              <p>Professor at Northeastern University</p>
+            </div>
+            <a href="#" class="mentor-link"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+
+          <!-- Mentor Box 7 -->
+          <div class="mentor-box">
+            <div class="mentor-slideshow">
+              <img src="people/birhanu.jpg" alt="Birhanu" />
+              <img src="people/birhanu1.webp" alt="Birhanu" />
+              <img src="people/birhanu2.jpg" alt="Birhanu" />
+              <img src="people/birhanu3.jpg" alt="Birhanu" />
+            </div>
+            <div class="mentor-text">
+              <h3>Random Name</h3>
+              <p>Expert in STEM Education.</p>
+            </div>
+            <a href="#" class="mentor-link"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+
+          <!-- Mentor Box 8 -->
+          <div class="mentor-box">
+            <div class="mentor-slideshow">
+              <img src="people/jelani.jpg" alt="Jelani" />
+              <img src="people/jelani1.png" alt="Jelani" />
+              <img src="people/jelani2.jpg" alt="Jelani" />
+              <img src="people/jelani3.jpg" alt="Jelani" />
+            </div>
+            <div class="mentor-text">
+              <h3>Jelani</h3>
+              <p>Mentor in Community Engagement.</p>
+            </div>
+            <a href="#" class="mentor-link"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+
+          <!-- Mentor Box 9 -->
+          <div class="mentor-box">
+            <div class="mentor-slideshow">
+              <img src="people/birhanu.jpg" alt="Birhanu" />
+              <img src="people/birhanu1.webp" alt="Birhanu" />
+              <img src="people/birhanu2.jpg" alt="Birhanu" />
+              <img src="people/birhanu3.jpg" alt="Birhanu" />
+            </div>
+            <div class="mentor-text">
+              <h3>Random Name</h3>
+              <p>Expert in STEM Education.</p>
+            </div>
+            <a href="#" class="mentor-link"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------contact-------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> contact@example.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> +251-970-635-676</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-square-linkedin"></i></a>
+            </div>
+            <a href="images/myCV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Lencho. All rights reserved.
+          <i class="fa-solid fa-person-circle-check"></i>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const mentorBoxes = document.querySelectorAll(".mentor-box");
+
+      mentorBoxes.forEach((box) => {
+        const slides = box.querySelectorAll("img");
+        let current = 0;
+
+        function showSlide(index) {
+          slides.forEach((img, i) => {
+            img.style.opacity = i === index ? 1 : 0;
+          });
+        }
+
+        showSlide(current); // show first image initially
+
+        setInterval(() => {
+          current = (current + 1) % slides.length;
+          showSlide(current);
+        }, 3000); // change every 3 seconds
+      });
+    </script>
+  </body>
+</html>

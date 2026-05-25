@@ -1,0 +1,655 @@
+#services{
+    padding: 80px 0;
+    color: #ababab;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(10, 10, 30, 0.9), rgba(20, 20, 50, 0.9));
+}
+
+/* Achievement Showcase Navigation */
+.achievement-showcase {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.showcase-nav {
+    display: inline-flex;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(99, 102, 241, 0.1));
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 8px;
+    gap: 8px;
+}
+
+.nav-btn {
+    padding: 12px 24px;
+    border: none;
+    background: transparent;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.3), transparent);
+    transition: left 0.6s ease;
+    z-index: -1;
+}
+
+.nav-btn:hover::before {
+    left: 0;
+}
+
+.nav-btn:hover {
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(138, 43, 226, 0.3);
+}
+
+.nav-btn.active {
+    background: linear-gradient(135deg, #8a2be2, #6366f1);
+    color: white;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(138, 43, 226, 0.4);
+}
+
+/* Magnificent Achievement Timeline */
+.achievements-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.achievement-item {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: center;
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-out forwards;
+    position: relative;
+}
+
+.achievement-item:nth-child(even) {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+.achievement-item:nth-child(1) { animation-delay: 0.1s; }
+.achievement-item:nth-child(2) { animation-delay: 0.3s; }
+.achievement-item:nth-child(3) { animation-delay: 0.5s; }
+.achievement-item:nth-child(4) { animation-delay: 0.7s; }
+.achievement-item:nth-child(5) { animation-delay: 0.9s; }
+.achievement-item:nth-child(6) { animation-delay: 1.1s; }
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px) translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px) translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+/* Amazing Image Container */
+.achievement-image-container {
+    position: relative;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.achievement-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: all 0.8s ease;
+}
+
+.image-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        rgba(138, 43, 226, 0.3), 
+        rgba(99, 102, 241, 0.3), 
+        rgba(138, 43, 226, 0.3));
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 0.6; }
+}
+
+.achievement-item:hover .image-glow {
+    opacity: 1;
+}
+
+/* Floating Shapes Animation */
+.floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.shape {
+    position: absolute;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(99, 102, 241, 0.8));
+    border-radius: 50%;
+    animation: floatShape 6s ease-in-out infinite;
+}
+
+.shape-1 {
+    width: 20px;
+    height: 20px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.shape-2 {
+    width: 15px;
+    height: 15px;
+    top: 60%;
+    right: 15%;
+    animation-delay: 2s;
+}
+
+.shape-3 {
+    width: 25px;
+    height: 25px;
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+@keyframes floatShape {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg) scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+/* Achievement Badge */
+.achievement-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #8a2be2, #6366f1);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+}
+
+.achievement-item:hover .achievement-badge {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.achievement-badge i {
+    font-size: 16px;
+}
+
+/* Magnificent Content Section */
+.achievement-content {
+    position: relative;
+    background: linear-gradient(135deg, 
+        rgba(138, 43, 226, 0.05), 
+        rgba(99, 102, 241, 0.05));
+    border: 2px solid rgba(138, 43, 226, 0.2);
+    border-radius: 25px;
+    padding: 40px;
+    backdrop-filter: blur(20px);
+    transition: all 0.6s ease;
+}
+
+.achievement-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        transparent 30%, 
+        rgba(138, 43, 226, 0.1) 50%, 
+        transparent 70%);
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.achievement-item:hover .achievement-content::before {
+    opacity: 1;
+}
+
+.content-header {
+    margin-bottom: 25px;
+}
+
+.content-header h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #8a2be2, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.achievement-meta {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.year {
+    background: linear-gradient(135deg, #8a2be2, #6366f1);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.category-badge {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ccc;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.achievement-description p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Achievement Highlights Grids */
+.achievement-highlights,
+.achievement-impact,
+.science-achievements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.highlight-item,
+.impact-item,
+.science-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.highlight-item:hover,
+.impact-item:hover,
+.science-item:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(138, 43, 226, 0.3);
+}
+
+.highlight-item i,
+.impact-item i,
+.science-item i {
+    font-size: 20px;
+    color: #8a2be2;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.highlight-item span,
+.impact-item span,
+.science-item span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Achievement Stats */
+.achievement-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(99, 102, 241, 0.1));
+    border: 2px solid rgba(138, 43, 226, 0.3);
+    border-radius: 15px;
+    padding: 20px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.stat-box:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(138, 43, 226, 0.4);
+}
+
+.stat-number {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #8a2be2;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Teaching Highlights */
+.teaching-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.teaching-item {
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(99, 102, 241, 0.1));
+    border: 2px solid rgba(138, 43, 226, 0.3);
+    border-radius: 15px;
+    padding: 20px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.teaching-item:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(138, 43, 226, 0.4);
+}
+
+.teaching-number {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #8a2be2;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
+.teaching-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Leadership Metrics */
+.leadership-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.metric {
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(99, 102, 241, 0.1));
+    border: 2px solid rgba(138, 43, 226, 0.3);
+    border-radius: 15px;
+    padding: 20px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.metric:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(138, 43, 226, 0.4);
+}
+
+.metric-number {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #8a2be2;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
+.metric-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+    .action-buttons {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .action-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Explore Details Button */
+.explore-details-btn {
+    background: linear-gradient(135deg, #8a2be2, #6366f1);
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.explore-details-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.explore-details-btn:hover::before {
+    left: 0;
+}
+
+.explore-details-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(138, 43, 226, 0.4);
+}
+
+.explore-details-btn i {
+    transition: transform 0.3s ease;
+}
+
+.explore-details-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Category Filter */
+.achievement-item[data-category].hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 968px) {
+    .achievement-item {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .achievement-image-container {
+        height: 300px;
+    }
+    
+    .achievement-content {
+        padding: 30px;
+    }
+    
+    .content-header h2 {
+        font-size: 28px;
+    }
+    
+    .achievement-highlights,
+    .achievement-impact,
+    .science-achievements,
+    .achievement-stats,
+    .teaching-highlights,
+    .leadership-metrics {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .showcase-nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+    .nav-btn {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #services {
+        padding: 40px 0;
+    }
+    
+    .achievement-item {
+        gap: 30px;
+    }
+    
+    .achievement-image-container {
+        height: 250px;
+    }
+    
+    .achievement-content {
+        padding: 20px;
+    }
+    
+    .content-header h2 {
+        font-size: 24px;
+    }
+    
+    .achievement-description p {
+        font-size: 14px;
+    }
+}

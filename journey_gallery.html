@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lencho Taye Portfolio - Journey Gallery</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/journey_gallery.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/bc43529ae8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Mind-Blowing Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Off-Canvas Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Off-Canvas Menu Panel -->
+    <div class="offcanvas-menu" id="offcanvasMenu">
+      <div class="menu-header">
+        <div class="menu-close" id="menuClose">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="menu-title">
+          <h2>Lencho Taye</h2>
+          <p>Portfolio & Projects</p>
+        </div>
+      </div>
+
+      <div class="menu-nav">
+        <ul>
+          <li>
+            <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+          </li>
+          <li>
+            <a href="achievements-leadership.html"
+              ><i class="fa-solid fa-trophy"></i>Achievements & Leadership</a
+            >
+          </li>
+          <li>
+            <a href="mentors-collaborators.html"
+              ><i class="fa-solid fa-people"></i>Mentors & Collaborators</a
+            >
+          </li>
+          <li>
+            <a href="projects.html"><i class="fa-solid fa-briefcase"></i>Projects</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Amazing Header -->
+    <header class="amazing-page-header">
+      <div class="header-glow"></div>
+      <div class="header-particles">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        <div class="particle particle-5"></div>
+      </div>
+      
+      <div class="header-content">
+        <div class="header-badge">
+          <i class="fa-solid fa-star pulse-icon"></i>
+          <span>Gallery</span>
+        </div>
+        <h1 class="main-title">
+          <span class="title-word">Journey</span>
+          <span class="title-word highlight">Gallery</span>
+        </h1>
+        <p class="header-description">
+          <i class="fa-solid fa-camera-retro"></i>
+          Capturing moments of growth, collaboration, and achievement
+          <i class="fa-solid fa-camera-retro"></i>
+        </p>
+        <div class="header-stats">
+          <div class="stat-item">
+            <i class="fa-solid fa-images"></i>
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Photos</span>
+          </div>
+          <div class="stat-item">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="stat-number">4</span>
+            <span class="stat-label">Categories</span>
+          </div>
+          <div class="stat-item">
+            <i class="fa-solid fa-clock"></i>
+            <span class="stat-number">2024</span>
+            <span class="stat-label">Year</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <!-- Gallery Section -->
+      <section id="gallery">
+        <!-- Amazing Category Filter Navigation -->
+        <div class="amazing-filter-nav">
+          <div class="filter-header">
+            <i class="fa-solid fa-filter pulse-icon"></i>
+            <h3>Filter Gallery</h3>
+            <div class="filter-line"></div>
+          </div>
+          
+          <div class="nav-container">
+            <button class="amazing-filter-btn active" data-category="all">
+              <div class="btn-content">
+                <div class="btn-icon">
+                  <i class="fa-solid fa-th"></i>
+                  <div class="icon-glow"></div>
+                </div>
+                <div class="btn-text">
+                  <span class="btn-label">ALL</span>
+                  <span class="btn-count">18</span>
+                </div>
+              </div>
+              <div class="btn-ripple"></div>
+            </button>
+            
+            <button class="amazing-filter-btn" data-category="international">
+              <div class="btn-content">
+                <div class="btn-icon">
+                  <i class="fa-solid fa-globe"></i>
+                  <div class="icon-glow"></div>
+                </div>
+                <div class="btn-text">
+                  <span class="btn-label">INTERNATIONAL</span>
+                  <span class="btn-count">3</span>
+                </div>
+              </div>
+              <div class="btn-ripple"></div>
+            </button>
+            
+            <button class="amazing-filter-btn" data-category="leadership">
+              <div class="btn-content">
+                <div class="btn-icon">
+                  <i class="fa-solid fa-crown"></i>
+                  <div class="icon-glow"></div>
+                </div>
+                <div class="btn-text">
+                  <span class="btn-label">LEADERSHIP</span>
+                  <span class="btn-count">3</span>
+                </div>
+              </div>
+              <div class="btn-ripple"></div>
+            </button>
+            
+            <button class="amazing-filter-btn" data-category="events">
+              <div class="btn-content">
+                <div class="btn-icon">
+                  <i class="fa-solid fa-calendar"></i>
+                  <div class="icon-glow"></div>
+                </div>
+                <div class="btn-text">
+                  <span class="btn-label">EVENTS & PROGRAMS</span>
+                  <span class="btn-count">6</span>
+                </div>
+              </div>
+              <div class="btn-ripple"></div>
+            </button>
+          </div>
+          
+          <div class="filter-stats">
+            <div class="stat-badge">
+              <i class="fa-solid fa-images"></i>
+              <span>Total: <strong>18</strong> items</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- ALL Category Items -->
+          
+          <!-- International Students Category -->
+          <div class="gallery-item" data-category="international">
+            <div class="image-container">
+              <img src="gallery/bini.jpg" alt="International Student Collaboration" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Biniyam Aschalew From Korean Advanced Institute of Technology (KAIST)</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="international">
+            <div class="image-container">
+              <img src="gallery/alex.jpg" alt="Professor Huacheng Yu" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Alexander Kai From Harvard University</p></p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="international">
+            <div class="image-container">
+              <img src="gallery/sonika.jpg" alt="Professor Huy Nguyen" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Sonika Vuyyuru UC Berkeley</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="leadership">
+            <div class="image-container">
+              <img src="gallery/biniyale.png" alt="Leadership Workshop" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Biniyam Lombe from Yale University</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="leadership">
+            <div class="image-container">
+              <img src="gallery/daniel.jpg" alt="Leadership Program" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Daniel from Spain Polytechnic</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="leadership">
+            <div class="image-container">
+              <img src="gallery/saba.png" alt="Leadership Award" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Saba from Harvard University</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="events">
+            <div class="image-container">
+              <img src="gallery/param2.jpg" alt="AI Conference" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Param Nigda From UC Berkeley</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="events">
+            <div class="image-container">
+              <img src="gallery/bontu.jpg" alt="Hackathon" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Bontu from A2SV</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="events">
+            <div class="image-container">
+              <img src="gallery/abdishakur.jpg" alt="Tech Summit" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Abdishakur from Pharoh Organization</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="events">
+            <div class="image-container">
+              <img src="gallery/addiscoderstudents.jpg" alt="Workshop" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>AddisCoder Closing Ceremony</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="events">
+            <div class="image-container">
+              <img src="gallery/addislecture.jpg" alt="Research Symposium" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>AddisCoder Lecture Time</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="all">
+            <div class="image-container">
+              <img src="gallery/param.jpg" alt="Journey Moment" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Coding Practice in the Lab with my mentors</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="all">
+            <div class="image-container">
+              <img src="gallery/addiscoderteam.jpg" alt="Collaboration" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Some of the AddisCoder Mentors and Lecterures</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="all">
+            <div class="image-container">
+              <img src="gallery/eaglopen_lec.jpg" alt="Innovation" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Me Teaching at EAGLOPEN AlgoLab Program</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="all">
+            <div class="image-container">
+              <img src="gallery/eaglopen_lec2.jpg" alt="Achievement" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Another Pic of me Teaching at EAGLOPEN AlgoLab</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="all">
+            <div class="image-container">
+              <img src="gallery/alex_lencho.jpg" alt="Team Success" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Me with Alex (Alexander Kai)</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="all">
+            <div class="image-container">
+              <img src="gallery/daniel_lencho.jpg" alt="Achievement" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Me with Daniel Neirto</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="all">
+            <div class="image-container">
+              <img src="gallery/sonika_lencho.jpg" alt="Achievement" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Me with Sonika Vuyyuru</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="all">
+            <div class="image-container">
+              <img src="gallery/bro_me.jpg" alt="Achievement" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Me with one of my Mentors at Addiscoder</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="all">
+            <div class="image-container">
+              <img src="gallery/medal_win2.jpg" alt="Achievement" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Me when I won scored the highest score in my High School</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="all">
+            <div class="image-container">
+              <img src="gallery/museum.jpg" alt="Achievement" class="gallery-image">
+            </div>
+            <div class="image-caption">
+              <p>Me at the National Museum during the AddisCoder Program</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- Amazing Footer -->
+    <footer class="amazing-footer">
+      <div class="footer-glow"></div>
+      
+      <div class="footer-content">
+        <!-- Connect With Me Section -->
+        <div class="footer-section connect-section">
+          <div class="section-header">
+            <i class="fa-solid fa-heart pulse-icon"></i>
+            <h3>Connect With Me</h3>
+            <div class="header-line"></div>
+          </div>
+          <div class="social-links-grid">
+            <a href="https://github.com/lenchataye" class="social-link github-link">
+              <div class="social-icon-wrapper">
+                <i class="fa-brands fa-github"></i>
+                <span class="social-tooltip">GitHub</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/lencho-taye-511367299?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link linkedin-link">
+              <div class="social-icon-wrapper">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="social-tooltip">LinkedIn</span>
+              </div>
+            </a>
+            <a href="https://x.com/lenchataye" class="social-link twitter-link">
+              <div class="social-icon-wrapper">
+                <i class="fa-brands fa-twitter"></i>
+                <span class="social-tooltip">Twitter</span>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/lenchataye?igsh=YXQ2MmNmbXZocnJq" class="social-link instagram-link">
+              <div class="social-icon-wrapper">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="social-tooltip">Instagram</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-section quick-links-section">
+          <div class="section-header">
+            <i class="fa-solid fa-rocket pulse-icon"></i>
+            <h3>Quick Links</h3>
+            <div class="header-line"></div>
+          </div>
+          <div class="quick-links-grid">
+            <a href="index.html" class="quick-link-btn home-link">
+              <i class="fa-solid fa-home"></i>
+              <span>Home</span>
+              <div class="btn-glow"></div>
+            </a>
+            <a href="about.html" class="quick-link-btn about-link">
+              <i class="fa-solid fa-user"></i>
+              <span>About</span>
+              <div class="btn-glow"></div>
+            </a>
+            <a href="projects.html" class="quick-link-btn projects-link">
+              <i class="fa-solid fa-code"></i>
+              <span>Projects</span>
+              <div class="btn-glow"></div>
+            </a>
+            <a href="contact.html" class="quick-link-btn contact-link">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+              <div class="btn-glow"></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="footer-section contact-section">
+          <div class="section-header">
+            <i class="fa-solid fa-location-dot pulse-icon"></i>
+            <h3>Contact Info</h3>
+            <div class="header-line"></div>
+          </div>
+          <div class="contact-info-grid">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <div class="contact-details">
+                <span class="contact-label">Email</span>
+                <a href="mailto:lenchotaye@example.com" class="contact-value">lenchataye@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <div class="contact-details">
+                <span class="contact-label">Phone</span>
+                <a href="tel:+251912345678" class="contact-value">+251 977 932 462</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-map-marker-alt contact-icon"></i>
+              <div class="contact-details">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Adama, Ethiopia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Links Section -->
+        <div class="footer-section additional-section">
+          <div class="section-header">
+            <i class="fa-solid fa-star pulse-icon"></i>
+            <h3>Explore More</h3>
+            <div class="header-line"></div>
+          </div>
+          <div class="additional-links-grid">
+            <a href="achievements-leadership.html" class="additional-link-btn achievements-btn">
+              <i class="fa-solid fa-medal"></i>
+              <span>Achievements & Leadership</span>
+              <div class="btn-glow"></div>
+            </a>
+            <a href="mentors-collaborators.html" class="additional-link-btn mentors-btn">
+              <i class="fa-solid fa-handshake"></i>
+              <span>Mentors & Collaborators</span>
+              <div class="btn-glow"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="copyright-section">
+        <div class="copyright-content">
+          <i class="fa-solid fa-copyright copyright-icon"></i>
+          <span class="copyright-text">Copyright &copy; 2024 Lencho Taye. All rights reserved.</span>
+          <div class="footer-badge">
+            <i class="fa-solid fa-person-circle-check"></i>
+            <span>Portfolio Pro</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mind-Blowing Hamburger Menu JavaScript
+      const hamburgerMenu = document.getElementById("hamburgerMenu");
+      const menuOverlay = document.getElementById("menuOverlay");
+      const offcanvasMenu = document.getElementById("offcanvasMenu");
+      const menuClose = document.getElementById("menuClose");
+      const menuLinks = document.querySelectorAll(".menu-nav a");
+
+      // Open menu function
+      function openMenu() {
+        hamburgerMenu.classList.add("active");
+        menuOverlay.classList.add("active");
+        offcanvasMenu.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      // Close menu function
+      function closeMenu() {
+        hamburgerMenu.classList.remove("active");
+        menuOverlay.classList.remove("active");
+        offcanvasMenu.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      // Toggle menu on hamburger click
+      hamburgerMenu.addEventListener("click", function () {
+        if (offcanvasMenu.classList.contains("active")) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      // Close menu on close button click
+      menuClose.addEventListener("click", closeMenu);
+
+      // Close menu on overlay click
+      menuOverlay.addEventListener("click", closeMenu);
+
+      // Close menu on link click
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      // Gallery Filter Functionality
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const galleryItems = document.querySelectorAll(".gallery-item");
+
+      function filterGallery(category) {
+        galleryItems.forEach((item) => {
+          if (category === "all") {
+            item.style.display = "block";
+            setTimeout(() => {
+              item.classList.add("animate-in");
+            }, 100);
+          } else {
+            const itemCategories = item.dataset.category.split(" ");
+            if (itemCategories.includes(category)) {
+              item.style.display = "block";
+              setTimeout(() => {
+                item.classList.add("animate-in");
+              }, 100);
+            } else {
+              item.style.display = "none";
+              item.classList.remove("animate-in");
+            }
+          }
+        });
+      }
+
+      // Amazing Filter Button Functionality
+      const amazingFilterBtns = document.querySelectorAll(".amazing-filter-btn");
+
+      function createRipple(event, button) {
+        const ripple = button.querySelector(".btn-ripple");
+        const rect = button.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = event.clientX - rect.left - size / 2;
+        const y = event.clientY - rect.top - size / 2;
+        
+        ripple.style.width = ripple.style.height = size + "px";
+        ripple.style.left = x + "px";
+        ripple.style.top = y + "px";
+        
+        setTimeout(() => {
+          ripple.style.width = ripple.style.height = "0";
+        }, 600);
+      }
+
+      amazingFilterBtns.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          // Create ripple effect
+          createRipple(e, this);
+          
+          // Remove active class from all buttons
+          amazingFilterBtns.forEach((b) => b.classList.remove("active"));
+          
+          // Add active class to clicked button
+          this.classList.add("active");
+          
+          // Filter gallery
+          const category = this.dataset.category;
+          filterGallery(category);
+          
+          // Update filter stats
+          updateFilterStats(category);
+        });
+
+        // Hover effects
+        btn.addEventListener("mouseenter", function () {
+          const iconGlow = this.querySelector(".icon-glow");
+          if (iconGlow) {
+            iconGlow.style.opacity = "1";
+          }
+        });
+
+        btn.addEventListener("mouseleave", function () {
+          const iconGlow = this.querySelector(".icon-glow");
+          if (iconGlow) {
+            iconGlow.style.opacity = "0";
+          }
+        });
+      });
+
+      function updateFilterStats(category) {
+        const statBadge = document.querySelector(".stat-badge span");
+        let count = 0;
+        
+        if (category === "all") {
+          count = 18;
+        } else if (category === "international") {
+          count = 3;
+        } else if (category === "leadership") {
+          count = 3;
+        } else if (category === "events") {
+          count = 6;
+        }
+        
+        statBadge.innerHTML = `Total: <strong>${count}</strong> items`;
+      }
+
+      // Initialize with "all" category
+      filterGallery("all");
+
+      // Amazing Gallery Interactions
+      const galleryGrid = document.querySelector(".gallery-grid");
+
+      // Gallery loading animation
+      galleryGrid.classList.add("loading");
+      setTimeout(() => {
+        galleryGrid.classList.remove("loading");
+        galleryGrid.classList.add("loaded");
+      }, 100);
+
+      // Gallery item hover effects
+      galleryItems.forEach((item, index) => {
+        // Mouse enter effect
+        item.addEventListener("mouseenter", function () {
+          this.style.zIndex = "10";
+          const image = this.querySelector(".gallery-image");
+          if (image) {
+            image.style.filter = "brightness(1.2) saturate(1.1)";
+          }
+        });
+
+        // Mouse leave effect
+        item.addEventListener("mouseleave", function () {
+          this.style.zIndex = "";
+          const image = this.querySelector(".gallery-image");
+          if (image) {
+            image.style.filter = "brightness(0.9) saturate(1)";
+          }
+        });
+
+        // Click to view image (optional enhancement)
+        item.addEventListener("click", function () {
+          const image = this.querySelector(".gallery-image");
+          const caption = this.querySelector(".image-caption p");
+          
+          if (image && caption) {
+            // Create a simple modal view
+            createImageModal(image.src, caption.textContent);
+          }
+        });
+      });
+
+      // Simple image modal function
+      function createImageModal(imageSrc, captionText) {
+        // Remove existing modal if any
+        const existingModal = document.querySelector(".image-modal");
+        if (existingModal) {
+          existingModal.remove();
+        }
+
+        // Create modal
+        const modal = document.createElement("div");
+        modal.className = "image-modal";
+        modal.innerHTML = `
+          <div class="modal-overlay" onclick="this.parentElement.remove()"></div>
+          <div class="modal-content">
+            <div class="modal-close" onclick="this.parentElement.parentElement.remove()">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <img src="${imageSrc}" alt="${captionText}" class="modal-image">
+            <div class="modal-caption">
+              <p>${captionText}</p>
+            </div>
+          </div>
+        `;
+
+        // Add modal styles
+        modal.style.cssText = `
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          animation: modalFadeIn 0.3s ease-out;
+        `;
+
+        // Add modal content styles
+        const modalContent = modal.querySelector(".modal-content");
+        modalContent.style.cssText = `
+          position: relative;
+          max-width: 90%;
+          max-height: 90%;
+          background: linear-gradient(135deg, rgba(10, 10, 30, 0.95), rgba(20, 20, 50, 0.95));
+          border: 2px solid rgba(138, 43, 226, 0.3);
+          border-radius: 20px;
+          overflow: hidden;
+          animation: modalSlideIn 0.3s ease-out;
+        `;
+
+        // Add modal overlay
+        const modalOverlay = modal.querySelector(".modal-overlay");
+        modalOverlay.style.cssText = `
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.8);
+          backdrop-filter: blur(10px);
+        `;
+
+        // Add modal close button
+        const modalClose = modal.querySelector(".modal-close");
+        modalClose.style.cssText = `
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          background: linear-gradient(135deg, #8a2be2, #6366f1);
+          color: white;
+          border: none;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          font-size: 18px;
+          z-index: 1001;
+          transition: all 0.3s ease;
+        `;
+
+        modalClose.addEventListener("mouseenter", function () {
+          this.style.transform = "scale(1.1)";
+          this.style.boxShadow = "0 5px 15px rgba(138, 43, 226, 0.4)";
+        });
+
+        modalClose.addEventListener("mouseleave", function () {
+          this.style.transform = "scale(1)";
+          this.style.boxShadow = "none";
+        });
+
+        // Add modal image styles
+        const modalImage = modal.querySelector(".modal-image");
+        modalImage.style.cssText = `
+          width: 100%;
+          max-height: 70vh;
+          object-fit: contain;
+          display: block;
+        `;
+
+        // Add modal caption styles
+        const modalCaption = modal.querySelector(".modal-caption");
+        modalCaption.style.cssText = `
+          padding: 20px;
+          text-align: center;
+          background: rgba(255, 255, 255, 0.05);
+        `;
+
+        const modalCaptionText = modalCaption.querySelector("p");
+        modalCaptionText.style.cssText = `
+          color: rgba(255, 255, 255, 0.9);
+          font-size: 16px;
+          margin: 0;
+          line-height: 1.6;
+        `;
+
+        // Add modal animations
+        const style = document.createElement("style");
+        style.textContent = `
+          @keyframes modalFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          @keyframes modalSlideIn {
+            from { transform: scale(0.9) translateY(20px); opacity: 0; }
+            to { transform: scale(1) translateY(0); opacity: 1; }
+          }
+        `;
+        document.head.appendChild(style);
+
+        // Add to body
+        document.body.appendChild(modal);
+
+        // Close on escape key
+        const handleEscape = (e) => {
+          if (e.key === "Escape") {
+            modal.remove();
+            document.removeEventListener("keydown", handleEscape);
+          }
+        };
+        document.addEventListener("keydown", handleEscape);
+      }
+
+      // Image loading optimization
+      const images = document.querySelectorAll(".gallery-image");
+      images.forEach((img) => {
+        if (img.complete) {
+          img.parentElement.classList.add("loaded");
+        } else {
+          img.addEventListener("load", function () {
+            this.parentElement.classList.add("loaded");
+          });
+          
+          img.addEventListener("error", function () {
+            this.parentElement.classList.add("error");
+          });
+        }
+      });
+
+      // Amazing Footer Interactions
+      const socialLinks = document.querySelectorAll(".social-link");
+      const quickLinks = document.querySelectorAll(".quick-link-btn, .additional-link-btn");
+      const contactItems = document.querySelectorAll(".contact-item");
+
+      // Social links hover effects
+      socialLinks.forEach((link) => {
+        link.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-5px) scale(1.1) rotate(5deg)";
+        });
+
+        link.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0) scale(1) rotate(0deg)";
+        });
+      });
+
+      // Quick links button effects
+      quickLinks.forEach((btn) => {
+        btn.addEventListener("mouseenter", function () {
+          const glow = this.querySelector(".btn-glow");
+          if (glow) {
+            glow.style.left = "0";
+          }
+        });
+
+        btn.addEventListener("mouseleave", function () {
+          const glow = this.querySelector(".btn-glow");
+          if (glow) {
+            glow.style.left = "-100%";
+          }
+        });
+      });
+
+      // Contact item hover effects
+      contactItems.forEach((item) => {
+        item.addEventListener("mouseenter", function () {
+          this.style.background = "rgba(138, 43, 226, 0.1)";
+          this.style.transform = "translateX(10px) scale(1.02)";
+        });
+
+        item.addEventListener("mouseleave", function () {
+          this.style.background = "rgba(255, 255, 255, 0.05)";
+          this.style.transform = "translateX(0) scale(1)";
+        });
+      });
+
+      // Footer section entrance animations
+      const footerSections = document.querySelectorAll(".footer-section");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.style.opacity = "0";
+              entry.target.style.transform = "translateY(30px)";
+              
+              setTimeout(() => {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+              }, 100);
+            }, index * 100);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      footerSections.forEach((section) => {
+        observer.observe(section);
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

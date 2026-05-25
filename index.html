@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lencho Taye Portfolio - Home</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <script
+      src="https://kit.fontawesome.com/bc43529ae8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Mind-Blowing Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    
+    <!-- Off-Canvas Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    
+    <!-- Off-Canvas Menu Panel -->
+    <div class="offcanvas-menu" id="offcanvasMenu">
+      <div class="menu-header">
+        <div class="menu-close" id="menuClose">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="menu-title">
+          <h2>Lencho Taye</h2>
+          <p>Portfolio & Projects</p>
+        </div>
+      </div>
+      
+      <div class="menu-nav">
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-home"></i>Home</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-user"></i>About</a></li>
+          <li><a href="achievements-leadership.html"><i class="fa-solid fa-trophy"></i>Achievements & Leadership</a></li>
+          <li><a href="projects.html"><i class="fa-solid fa-code"></i>Projects</a></li>
+          <li><a href="mentors-collaborators.html"><i class="fa-solid fa-users"></i>Mentors & Collaborators</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="menu-footer">
+        <div class="social-links">
+          <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="menu-copyright">
+          <p>&copy; 2024 Lencho Taye. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="header" class="home-header">
+      <!-- Dynamic Background Images -->
+      <div class="background-slideshow">
+        <div class="slide active" data-slide="1">
+          <img src="images/background.png" alt="Background 1" class="desktop-bg">
+          <img src="images/phone-background.png" alt="Phone Background 1" class="mobile-bg">
+        </div>
+        <div class="slide" data-slide="2">
+          <img src="images/background2.png" alt="Background 2" class="desktop-bg">
+          <img src="images/phone-background2.jpg" alt="Phone Background 2" class="mobile-bg">
+        </div>
+        <div class="slide" data-slide="3">
+          <img src="images/background3.jpg" alt="Background 3" class="desktop-bg">
+          <img src="images/phone-background3.jpg" alt="Phone Background 3" class="mobile-bg">
+        </div>
+      </div>
+      
+      <!-- Background Overlay for better text visibility -->
+      <div class="background-overlay"></div>
+      
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="achievements-leadership.html">Achievements & Leadership</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="mentors-collaborators.html">Mentors & Collaborators</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        
+        <!-- Dynamic Text Content -->
+        <div class="header-text">
+          <div class="text-slide active" data-text="1">
+            <div class="text-content">
+              <p class="subtitle">
+                <span class="letter">O</span>
+                <span class="letter">D</span>
+                <span class="letter">A</span>
+                <span class="letter"> </span>
+                <span class="letter">S</span>
+                <span class="letter">p</span>
+                <span class="letter">e</span>
+                <span class="letter">c</span>
+                <span class="letter">i</span>
+                <span class="letter">a</span>
+                <span class="letter">l</span>
+                <span class="letter"> </span>
+                <span class="letter">B</span>
+                <span class="letter">o</span>
+                <span class="letter">a</span>
+                <span class="letter">r</span>
+                <span class="letter">d</span>
+                <span class="letter">i</span>
+                <span class="letter">n</span>
+                <span class="letter">g</span>
+                <span class="letter"> </span>
+                <span class="letter">S</span>
+                <span class="letter">c</span>
+                <span class="letter">h</span>
+                <span class="letter">o</span>
+                <span class="letter">o</span>
+                <span class="letter">l</span>
+                <span class="letter"> </span>
+                <span class="letter">S</span>
+                <span class="letter">t</span>
+                <span class="letter">u</span>
+                <span class="letter">d</span>
+                <span class="letter">e</span>
+                <span class="letter">n</span>
+                <span class="letter">t</span>
+              </p>
+              <h1 class="title">
+                <span class="line">
+                  <span class="word">Hi,</span>
+                  <span class="word">I'm</span>
+                  <span class="highlight">Lencho</span>
+                  <span class="highlight">Taye</span>
+                </span>
+                <span class="line">
+                  <span class="word">from</span>
+                  <span class="highlight">Ethiopia</span>
+                </span>
+              </h1>
+            </div>
+          </div>
+          
+          <div class="text-slide" data-text="2">
+            <div class="text-content">
+              <p class="subtitle">
+                <span class="letter">E</span>
+                <span class="letter">A</span>
+                <span class="letter">G</span>
+                <span class="letter">L</span>
+                <span class="letter">O</span>
+                <span class="letter">P</span>
+                <span class="letter">E</span>
+                <span class="letter">N</span>
+                <span class="letter"> </span>
+                <span class="letter">F</span>
+                <span class="letter">o</span>
+                <span class="letter">u</span>
+                <span class="letter">n</span>
+                <span class="letter">d</span>
+                <span class="letter">e</span>
+                <span class="letter">r</span>
+              </p>
+              <h1 class="title">
+                <span class="line">
+                  <span class="word">Empowering</span>
+                  <span class="highlight">Students</span>
+                </span>
+                <span class="line">
+                  <span class="word">Through</span>
+                  <span class="highlight">Technology</span>
+                </span>
+              </h1>
+              <div class="description">
+                <p>As founder of EAGLOPEN, I'm dedicated to creating educational opportunities and fostering innovation in technology education for Ethiopian students.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-slide" data-text="3">
+            <div class="text-content">
+              <p class="subtitle">
+                <span class="letter">A</span>
+                <span class="letter">c</span>
+                <span class="letter">a</span>
+                <span class="letter">d</span>
+                <span class="letter">e</span>
+                <span class="letter">m</span>
+                <span class="letter">i</span>
+                <span class="letter">c</span>
+                <span class="letter"> </span>
+                <span class="letter">E</span>
+                <span class="letter">x</span>
+                <span class="letter">c</span>
+                <span class="letter">e</span>
+                <span class="letter">l</span>
+                <span class="letter">l</span>
+                <span class="letter">e</span>
+                <span class="letter">n</span>
+                <span class="letter">c</span>
+                <span class="letter">e</span>
+              </p>
+              <h1 class="title">
+                <span class="line">
+                  <span class="highlight">Perfect</span>
+                  <span class="word">4.00</span>
+                  <span class="word">GPA</span>
+                </span>
+                <span class="line">
+                  <span class="word">Multiple</span>
+                  <span class="highlight">Medals</span>
+                </span>
+              </h1>
+              <div class="description">
+                <p>Achieved straight A+ results throughout high school with a perfect 4.00 GPA and earned numerous medals for academic excellence at ODA Special Boarding School.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide Indicators -->
+        <div class="slide-indicators">
+          <button class="indicator active" data-slide="1"></button>
+          <button class="indicator" data-slide="2"></button>
+          <button class="indicator" data-slide="3"></button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Mind-Blowing Hamburger Menu JavaScript
+      const hamburgerMenu = document.getElementById('hamburgerMenu');
+      const menuOverlay = document.getElementById('menuOverlay');
+      const offcanvasMenu = document.getElementById('offcanvasMenu');
+      const menuClose = document.getElementById('menuClose');
+      const menuLinks = document.querySelectorAll('.menu-nav a');
+
+      // Open menu function
+      function openMenu() {
+        hamburgerMenu.classList.add('active');
+        menuOverlay.classList.add('active');
+        offcanvasMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      // Close menu function
+      function closeMenu() {
+        hamburgerMenu.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        offcanvasMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      // Toggle menu on hamburger click
+      hamburgerMenu.addEventListener('click', function() {
+        if (offcanvasMenu.classList.contains('active')) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+      
+
+      // Close menu on close button click
+      menuClose.addEventListener('click', closeMenu);
+
+      // Close menu on overlay click
+      menuOverlay.addEventListener('click', closeMenu);
+
+      // Close menu on menu link click
+      menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          closeMenu();
+        });
+      });
+
+      // Close menu on escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && offcanvasMenu.classList.contains('active')) {
+          closeMenu();
+        }
+      });
+
+      // Original menu functions (kept for compatibility)
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+
+      // Dynamic Slideshow System
+      class DynamicSlideshow {
+        constructor() {
+          this.currentSlide = 1;
+          this.totalSlides = 3;
+          this.slideInterval = 4000; // 4 seconds
+          this.isTransitioning = false;
+          
+          this.init();
+        }
+
+        init() {
+          this.slides = document.querySelectorAll('.slide');
+          this.textSlides = document.querySelectorAll('.text-slide');
+          this.indicators = document.querySelectorAll('.indicator');
+          
+          this.startSlideshow();
+          this.bindEvents();
+          this.animateInitialText();
+        }
+
+        bindEvents() {
+          // Indicator clicks
+          this.indicators.forEach(indicator => {
+            indicator.addEventListener('click', (e) => {
+              const slideNum = parseInt(e.target.dataset.slide);
+              this.goToSlide(slideNum);
+            });
+          });
+
+          // Pause on hover
+          const header = document.querySelector('.home-header');
+          header.addEventListener('mouseenter', () => this.pauseSlideshow());
+          header.addEventListener('mouseleave', () => this.startSlideshow());
+        }
+
+        startSlideshow() {
+          if (this.interval) clearInterval(this.interval);
+          
+          this.interval = setInterval(() => {
+            this.nextSlide();
+          }, this.slideInterval);
+        }
+
+        pauseSlideshow() {
+          if (this.interval) clearInterval(this.interval);
+        }
+
+        nextSlide() {
+          const nextSlide = this.currentSlide === this.totalSlides ? 1 : this.currentSlide + 1;
+          this.goToSlide(nextSlide);
+        }
+
+        goToSlide(slideNum) {
+          if (this.isTransitioning || slideNum === this.currentSlide) return;
+          
+          this.isTransitioning = true;
+          
+          // Update slides
+          this.slides.forEach((slide, index) => {
+            slide.classList.toggle('active', index + 1 === slideNum);
+          });
+          
+          // Update text slides
+          this.textSlides.forEach((textSlide, index) => {
+            textSlide.classList.toggle('active', index + 1 === slideNum);
+          });
+          
+          // Update indicators
+          this.indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index + 1 === slideNum);
+          });
+          
+          // Update logo visibility based on slide
+          this.updateLogoVisibility(slideNum);
+          
+          // Animate text
+          this.animateText(slideNum);
+          
+          this.currentSlide = slideNum;
+          
+          setTimeout(() => {
+            this.isTransitioning = false;
+          }, 1000);
+        }
+
+        updateLogoVisibility(slideNum) {
+          const logo = document.querySelector('.logo');
+          if (slideNum === 1) {
+            // First slide - show logo with simple fade
+            logo.style.transition = 'opacity 0.6s ease-in-out';
+            logo.style.display = 'block';
+            logo.style.opacity = '0';
+            
+            setTimeout(() => {
+              logo.style.opacity = '1';
+            }, 100);
+          } else {
+            // Slides 2 and 3 - hide logo with simple fade
+            logo.style.transition = 'opacity 0.6s ease-in-out';
+            logo.style.opacity = '1';
+            
+            setTimeout(() => {
+              logo.style.opacity = '0';
+            }, 100);
+            
+            setTimeout(() => {
+              logo.style.display = 'none';
+            }, 700);
+          }
+        }
+
+        animateText(slideNum) {
+          const activeTextSlide = document.querySelector(`.text-slide[data-text="${slideNum}"]`);
+          if (!activeTextSlide) return;
+
+          const letters = activeTextSlide.querySelectorAll('.letter');
+          const words = activeTextSlide.querySelectorAll('.word, .highlight');
+          
+          // Reset animations
+          letters.forEach(letter => {
+            letter.style.animation = 'none';
+            letter.offsetHeight; // Trigger reflow
+          });
+          
+          words.forEach(word => {
+            word.style.animation = 'none';
+            word.offsetHeight; // Trigger reflow
+          });
+
+          // Animate letters with stagger
+          letters.forEach((letter, index) => {
+            setTimeout(() => {
+              letter.style.animation = `letterSlideIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards`;
+            }, index * 50);
+          });
+
+          // Animate words with stagger
+          words.forEach((word, index) => {
+            setTimeout(() => {
+              word.style.animation = `wordSlideIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards`;
+            }, letters.length * 50 + index * 100);
+          });
+
+          // Animate additional elements
+          const description = activeTextSlide.querySelector('.description');
+          const ctaButtons = activeTextSlide.querySelector('.cta-buttons');
+          const achievements = activeTextSlide.querySelector('.achievements');
+          
+          setTimeout(() => {
+            if (description) {
+              description.style.animation = 'fadeInUp 0.8s ease-out forwards';
+            }
+            if (ctaButtons) {
+              ctaButtons.style.animation = 'fadeInUp 0.8s ease-out forwards';
+            }
+            if (achievements) {
+              achievements.style.animation = 'fadeInUp 0.8s ease-out forwards';
+            }
+          }, letters.length * 50 + words.length * 100);
+        }
+
+        animateInitialText() {
+          this.updateLogoVisibility(1);
+          this.animateText(1);
+        }
+      }
+
+      // Initialize slideshow when DOM is ready
+      document.addEventListener('DOMContentLoaded', () => {
+        new DynamicSlideshow();
+      });
+    </script>
+  </body>
+</html>

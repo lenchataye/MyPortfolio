@@ -1,0 +1,201 @@
+// SIMPLE EMAIL-ONLY CONTACT FORM SCRIPT
+// Email: lenchataye@gmail.com
+
+const OWNER_EMAIL = 'lenchataye@gmail.com';
+
+function doGet(e) {
+  try {
+    // Handle GET parameters from URL
+    const params = e.parameter;
+    
+    // Get current timestamp
+    const timestamp = new Date().toLocaleString();
+    
+    // Log for debugging
+    Logger.log('=== NEW EMAIL SUBMISSION ===');
+    Logger.log('Parameters: ' + JSON.stringify(params));
+    
+    // Create data object for email
+    const data = {
+      name: params.name || 'No name provided',
+      email: params.email || 'No email provided',
+      subject: params.subject || 'No subject provided',
+      message: params.message || 'No message provided'
+    };
+    
+    // Send beautiful email
+    sendBeautifulEmail(data, timestamp);
+    
+    // Return success response
+    return HtmlService.createHtmlOutput(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <style>
+            body { 
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+              padding: 40px; 
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              color: white; 
+              margin: 0; 
+              min-height: 100vh;
+              display: flex; 
+              align-items: center; 
+              justify-content: center;
+            }
+            .success-container { 
+              background: white; 
+              padding: 40px; 
+              border-radius: 20px; 
+              box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+              text-align: center; 
+              max-width: 500px;
+              animation: slideIn 0.5s ease-out;
+            }
+            @keyframes slideIn {
+              from { opacity: 0; transform: translateY(-20px); }
+              to { opacity: 1; transform: translateY(0); }
+            }
+            .checkmark { 
+              font-size: 60px; 
+              color: #28a745; 
+              margin-bottom: 20px;
+            }
+            h1 { 
+              color: #333; 
+              margin-bottom: 10px; 
+              font-size: 24px;
+            }
+            .message-details { 
+              text-align: left; 
+              margin: 20px 0; 
+              padding: 20px; 
+              background: #f8f9fa; 
+              border-radius: 10px;
+            }
+            .field { 
+              margin: 10px 0; 
+              padding: 10px; 
+              border-left: 4px solid #667eea;
+            }
+            .field-label { 
+              font-weight: bold; 
+              color: #667eea; 
+              display: block;
+              margin-bottom: 5px;
+            }
+            .field-value { 
+              color: #555; 
+              word-wrap: break-word;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="success-container">
+            <div class="checkmark">✓</div>
+            <h1>Message Sent Successfully!</h1>
+            <p style="color: #666; font-size: 16px;">Thank you for contacting me. I'll get back to you soon!</p>
+            
+            <div class="message-details">
+              <div class="field">
+                <span class="field-label">Name:</span>
+                <span class="field-value">${data.name}</span>
+              </div>
+              <div class="field">
+                <span class="field-label">Email:</span>
+                <span class="field-value">${data.email}</span>
+              </div>
+              <div class="field">
+                <span class="field-label">Subject:</span>
+                <span class="field-value">${data.subject}</span>
+              </div>
+              <div class="field">
+                <span class="field-label">Message:</span>
+                <span class="field-value">${data.message}</span>
+              </div>
+            </div>
+            
+            <p style="margin-top: 30px; font-size: 14px; color: #888;">
+              This message has been sent to Lencho Taye<br>
+              <strong>Received at: ${timestamp}</strong>
+            </p>
+          </div>
+          <script>
+            setTimeout(function() {
+              window.parent.postMessage({status: 'success'}, '*');
+            }, 2000);
+          </script>
+        </body>
+      </html>
+    `);
+    
+  } catch (error) {
+    Logger.log('ERROR: ' + error.toString());
+    
+    return HtmlService.createHtmlOutput(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <style>
+            body { 
+              font-family: Arial, sans-serif; 
+              padding: 40px; 
+              background: #f5f5f5; 
+              color: #d32f2f; 
+              text-align: center;
+            }
+          </style>
+        </head>
+        <body>
+          <h1>❌ Error: ${error.toString()}</h1>
+          <p>Please try again or contact directly at lenchataye@gmail.com</p>
+        </body>
+      </html>
+    `);
+  }
+}
+
+function sendBeautifulEmail(data, timestamp) {
+  try {
+    const subject = 'New Message from Your Portfolio Website';
+    const body = `Hello Lencho,
+
+You have received a new message through your portfolio contact form. The details of the message are provided below.
+
+Sender Information
+
+Name: ${data.name}
+Email: ${data.email}
+
+Subject
+
+${data.subject}
+
+Message
+
+${data.message}
+
+Submission Details
+
+Received: ${timestamp}
+Sent To: Lencho Taye (lenchataye@gmail.com)
+Source: Portfolio Website Contact Form
+
+You can reply directly to this message by responding to ${data.email}.
+
+Best regards,
+Portfolio Contact System`;
+    
+    MailApp.sendEmail({
+      to: OWNER_EMAIL,
+      subject: subject,
+      body: body,
+      name: 'Portfolio Contact Form'
+    });
+    
+    Logger.log('✅ Professional email sent to: ' + OWNER_EMAIL);
+    
+  } catch (emailError) {
+    Logger.log('EMAIL ERROR: ' + emailError.toString());
+  }
+}
