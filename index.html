@@ -330,23 +330,11 @@
               this.goToSlide(slideNum);
             });
           });
-
-          // Pause on hover
-          const header = document.querySelector('.home-header');
-          header.addEventListener('mouseenter', () => this.pauseSlideshow());
-          header.addEventListener('mouseleave', () => this.startSlideshow());
         }
 
         startSlideshow() {
-          if (this.interval) clearInterval(this.interval);
-          
-          this.interval = setInterval(() => {
-            this.nextSlide();
-          }, this.slideInterval);
-        }
-
-        pauseSlideshow() {
-          if (this.interval) clearInterval(this.interval);
+          clearTimeout(this.timer);
+          this.timer = setTimeout(() => this.nextSlide(), this.slideInterval);
         }
 
         nextSlide() {
@@ -384,6 +372,7 @@
           
           setTimeout(() => {
             this.isTransitioning = false;
+            this.startSlideshow();
           }, 1000);
         }
 

@@ -1,1 +1,40 @@
 /* Home specific styles - header and hero sections are in header.css */
+
+/* ======= HOME HERO TITLE — ANIMATED MULTICOLOR (homepage only, no glare) ======= */
+
+/* Flowing aurora gradient on each word/highlight (actual text containers) */
+.home-header .header-text .title .word,
+.home-header .header-text .title .highlight {
+    color: transparent;
+    background: linear-gradient(100deg,
+        #22d3ee, #818cf8, #c084fc, #f472b6,
+        #60a5fa, #f9a8d4, #34d399, #22d3ee);
+    background-size: 320% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: homeTitleFlow 8s ease-in-out infinite;
+    /* single clean glow via filter - no text-shadow = no ghost */
+    filter: drop-shadow(0 0 18px rgba(129, 140, 248, 0.30));
+}
+
+/* Ensure highlights use the same flowing gradient (keep clip properties!) */
+.home-header .header-text .title .highlight {
+    background: linear-gradient(100deg,
+        #22d3ee, #818cf8, #c084fc, #f472b6,
+        #60a5fa, #f9a8d4, #34d399, #22d3ee);
+    background-size: 320% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Ensure no conflicting text-shadow */
+.home-header .header-text .title .word {
+    text-shadow: none;
+}
+
+@keyframes homeTitleFlow {
+    0%, 100% { background-position: 0% 50%; }
+    50%      { background-position: 100% 50%; }
+}
