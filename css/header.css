@@ -99,6 +99,14 @@
     transform: translateY(30px) rotateZ(-10deg);
 }
 
+/* Word-level subtitle (for natural word wrapping) */
+.subtitle .word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(30px);
+    margin-right: 0.3em;
+}
+
 /* Word by Word Animation */
 .title {
     font-size: 60px;
